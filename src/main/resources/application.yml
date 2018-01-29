@@ -1,0 +1,17 @@
+server:
+  tomcat:
+    max-threads: 200
+  protocol: http	
+  port: 12000
+  
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/fortumo_test_task
+    username: fortumo_test_user
+    password: fortumo_test_password
+    
+logging:
+  level:
+    io.fortumo.*: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
